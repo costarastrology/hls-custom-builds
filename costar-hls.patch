@@ -1,0 +1,45 @@
+diff --git a/stack.yaml b/stack.yaml
+index b303ed24..a3ea6dda 100644
+--- a/stack.yaml
++++ b/stack.yaml
+@@ -1,4 +1,4 @@
+-resolver: nightly-2022-08-15
++resolver: lts-20.16
+ 
+ packages:
+ - .
+@@ -20,8 +20,8 @@ packages:
+ - ./plugins/hls-refine-imports-plugin
+ - ./plugins/hls-hlint-plugin
+ - ./plugins/hls-rename-plugin
+-# - ./plugins/hls-retrie-plugin
+-# - ./plugins/hls-splice-plugin
++- ./plugins/hls-retrie-plugin
++- ./plugins/hls-splice-plugin
+ # - ./plugins/hls-tactics-plugin
+ - ./plugins/hls-stylish-haskell-plugin
+ - ./plugins/hls-floskell-plugin
+@@ -51,6 +51,11 @@ extra-deps:
+ - lsp-types-1.6.0.0
+ - lsp-test-0.14.1.0
+ - hie-bios-0.11.0
++- hlint-3.5
++- ormolu-0.5.2.0
++- fourmolu-0.10.1.0
++- Cabal-syntax-3.8.1.0
++- ghc-lib-parser-9.4.1.20220807
+ 
+ # currently needed for ghcide>extra, etc.
+ allow-newer: true
+@@ -72,8 +77,9 @@ flags:
+ 
+     ignore-plugins-ghc-bounds: true
+     haddockComments: false
+-    retrie: false
+-    splice: false
++    stylishHaskell: false
++    retrie: true
++    splice: true
+     tactic: false
+ 
+   retrie:
