@@ -4,7 +4,7 @@ index b303ed24..a3ea6dda 100644
 +++ b/stack.yaml
 @@ -1,4 +1,4 @@
 -resolver: nightly-2022-08-15
-+resolver: lts-20.16
++resolver: lts-20.21
  
  packages:
  - .
@@ -22,7 +22,7 @@ index b303ed24..a3ea6dda 100644
 @@ -51,6 +51,11 @@ extra-deps:
  - lsp-types-1.6.0.0
  - lsp-test-0.14.1.0
- - hie-bios-0.11.0
+ - hie-bios-0.12.0
 +- hlint-3.5
 +- ormolu-0.5.2.0
 +- fourmolu-0.10.1.0
