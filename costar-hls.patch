@@ -1,5 +1,5 @@
 diff --git a/stack.yaml b/stack.yaml
-index ff511b03..aac29fce 100644
+index 8ec367da..de9b2935 100644
 --- a/stack.yaml
 +++ b/stack.yaml
 @@ -1,4 +1,4 @@
@@ -19,7 +19,7 @@ index ff511b03..aac29fce 100644
  # - ./plugins/hls-tactics-plugin
  - ./plugins/hls-stylish-haskell-plugin
  - ./plugins/hls-floskell-plugin
-@@ -51,6 +51,11 @@ extra-deps:
+@@ -52,6 +52,11 @@ extra-deps:
  - lsp-types-1.6.0.0
  - lsp-test-0.14.1.0
  - hie-bios-0.12.0
@@ -31,7 +31,7 @@ index ff511b03..aac29fce 100644
  
  # currently needed for ghcide>extra, etc.
  allow-newer: true
-@@ -72,8 +77,9 @@ flags:
+@@ -73,8 +78,9 @@ flags:
  
      ignore-plugins-ghc-bounds: true
      haddockComments: false
